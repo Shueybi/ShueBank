@@ -1,3 +1,6 @@
 shuebank.db
 shuebank.db.*
 commandlinetools-*.zip
+__pycache__/
+*.pyc
+app/main.py.*
