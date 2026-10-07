@@ -19,7 +19,7 @@ def create_tables():
             username TEXT UNIQUE NOT NULL,
             password TEXT NOT NULL,
             account_number TEXT UNIQUE NOT NULL,
-            balance REAL DEFAULT 0
+            balance REAL DEFAULT 0,
             role TEXT NOT NULL DEFAULT "user",
             status TEXT NOT NULL DEFAULT "active"
         )
