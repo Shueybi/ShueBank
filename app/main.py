@@ -4,6 +4,7 @@ import sqlite3
 import os
 import secrets
 import hashlib
+from app.database import create_tables
 from app.security.passwords import hash_password as _pbkdf2_hash, verify_password
 
 
@@ -14,6 +15,7 @@ os.chdir(BASE_DIR)
 
 DB = os.path.join(BASE_DIR, "..", "shuebank.db")
 SESSIONS = {}
+create_tables()
 
 
 def hash_password(password):
